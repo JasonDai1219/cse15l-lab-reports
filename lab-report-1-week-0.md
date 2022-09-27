@@ -1,1 +1,1 @@
-![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Lab0.png)
+![Image](https://JasonDai1219.github.io/cse15l-lab-reports/Lab0.png)
