@@ -1,5 +1,4 @@
 Hello World!
-[click here](https://jasondai1219.githubΩ.io/cse15l-lab-reports/Testing.html)
 *See you*
 
 I am trying the live updating
