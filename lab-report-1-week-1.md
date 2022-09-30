@@ -14,7 +14,7 @@ The link is here [link](https://code.visualstudio.com/download).
 You can choose the download type based on the type of your type.
 
 After you successfully download the Visual Studio Code, it should look like this:
-![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/VS%20Code.png)
+![Image](VS Code.png)
 
 If you have already installed Visual Studio Code before, you can skip and go to the next part.
 
@@ -59,7 +59,7 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lfa22
 
 On your terminal, it should display this:
 
-![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Remote.png)
+![Image](Remote.png)
 ---
 ## Trying Some Commands
 after connecting to the remote server, you can try several commands in the terminal to explore this new stuff!
@@ -83,7 +83,7 @@ if you want to disconnect from the server, you can try:
 Here is an example of using cp and cat command:
 
 
-![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Commands.png)
+![Image](Commands.png)
 
 
 ---
@@ -112,7 +112,7 @@ if you compile and run the class again by using javac and java, you should see t
 
 This is what I got for compiling and running on the remote server's terminal:
 
-![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/File.png)
+![Image](File.png)
 
 ---
 ## Setting a SSH Keys
@@ -157,7 +157,7 @@ Then back on the local device, try to type `scp /Users/joe/.ssh/id_rsa.pub cs15l
 
 After finishing all steps in this part, you should see that you do not need to enter the password again to log onto the remote server like this:
 
-![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Key.png)
+![Image](Key.png)
 ---
 ## Optimizing Remote Running
 
