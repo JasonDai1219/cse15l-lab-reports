@@ -1,4 +1,11 @@
 # Remote Access Tutorial
+
+## Introduction
+Hello! In this tutorial, you will learn how to set up and use the remote server of UCSD.
+
+By using the Remote server, you can gain more computer power, access more data, and operate in a more secure way.
+
+---
 ## Installing VSCode
 Hello! You will need to first install Visual Studio Code to begin the work.
 
@@ -161,3 +168,7 @@ there are ways to actually make running remote server more efficiently, such as:
 and also `ssh cs15lfa22pv@ieng6.ucsd.edu "ls"` to log in and also list out all the files.
 
 It is also convienient to use the up arrow to retrieve your previous command.
+
+---
+## Conclusion
+By now, you should be able to use the remote access now, if you have any probelm or confusion in future usings, you are always welcome to come back to find information that may help you figure out the problem.
