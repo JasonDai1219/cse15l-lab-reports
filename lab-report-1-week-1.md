@@ -16,7 +16,7 @@ You can choose the download type based on the type of your type.
 After you successfully download the Visual Studio Code, it should look like this:
 ![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/VS%20Code.png)
 
-If you have already installed Visual Studio Code before, you can skip and go to the nex part.
+If you have already installed Visual Studio Code before, you can skip and go to the next part.
 
 ---
 ## Remotely Connecting
