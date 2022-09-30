@@ -14,7 +14,7 @@ The link is here [link](https://code.visualstudio.com/download).
 You can choose the download type based on the type of your type.
 
 After you successfully download the Visual Studio Code, it should look like this:
-![Image](VS Code.png)
+![Image](VS$Code.png)
 
 If you have already installed Visual Studio Code before, you can skip and go to the next part.
 
