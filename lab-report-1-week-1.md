@@ -74,7 +74,7 @@ Here is an example of using cp and cat command:
 
 
 ---
-## Moving Files over SSH with scp
+## Moving Files with scp
 It would be more efficient for us to be able to move our local files, by using the `scp` command.
 
 Where you can first try that by creating a class:
@@ -95,4 +95,51 @@ Then you are ready to move the file to the remote server, by using the following
 
 `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/`
 
-if you compile and run the class again, you should see the information produced by the getProperty method of the remote server.
+if you compile and run the class again by using javac and java, you should see the information produced by the getProperty method of the remote server.
+
+This is what I got for compiling and running on the remote server's terminal:
+![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/File.png)
+
+---
+## Setting a SSH Keys
+As before, when we want to log into the remote server, we need to always type the password. But now there is a way to skip that part.
+
+we can use the `ssh-keygen` command to save password on server and local log in portion.
+
+when you enter the `ssh-keygen` command, we should see the following:
+
+```
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/joe/.ssh/id_rsa): /Users/joe/.ssh/id_rsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/joe/.ssh/id_rsa.
+Your public key has been saved in /Users/joe/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+
+if the computer prompts `Enter file in which to save the key (/Users/xxx/.ssh/id_rsa)`: press enter to continue.
+
+if youb are a Windows user, follow the extra steps from this link:
+[link]( https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+
+Then you can try to log in the remote server again and type `mkdir .ssh` on the terminal and then log out.
+
+Then back on the local device, try to type `scp /Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+After finishing all steps in this part, you should see that you do not need to enter the password again to log onto the remote server like this:
+![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Key.png)
