@@ -16,6 +16,11 @@ If you have already installed Visual Studio Code before, you can skip and go to 
 Hello! In this part, you can begin to connect to the server!
 
 You will first need to type the following code in your Visual Studio Code's terminal:
+
+the terminal look like this:
+![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Terminal.png)
+
+the command is:
 `ssh cs15lfa22pv@ieng6.ucsd.edu`
 
 You will probably get a message like this, but it is fine, just type yes:
