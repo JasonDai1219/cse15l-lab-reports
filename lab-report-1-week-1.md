@@ -148,3 +148,13 @@ Then back on the local device, try to type `scp /Users/joe/.ssh/id_rsa.pub cs15l
 
 After finishing all steps in this part, you should see that you do not need to enter the password again to log onto the remote server like this:
 ![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Key.png)
+---
+## Optimizing Remote Running
+
+there are ways to actually make running remote server more efficiently, such as:
+
+`$ scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/; javac WhereAmI.java; java WhereAmI`, which runs compiles and runs the java file in just one command line by separating them by semicolons.
+
+and also `ssh cs15lfa22pv@ieng6.ucsd.edu "ls"` to log in and also list out all the files.
+
+It is also convienient to use the up arrow to retrieve your previous command.
