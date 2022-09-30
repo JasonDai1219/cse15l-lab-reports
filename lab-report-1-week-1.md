@@ -7,6 +7,7 @@ The link is here [link](https://code.visualstudio.com/download).
 You can choose the download type based on the type of your type.
 
 After you successfully download the Visual Studio Code, it should look like this:
+
 ![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/VS%20Code.png)
 
 If you have already installed Visual Studio Code before, you can skip and go to the nex part.
@@ -18,6 +19,7 @@ Hello! In this part, you can begin to connect to the server!
 You will first need to type the following code in your Visual Studio Code's terminal:
 
 the terminal look like this:
+
 ![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Terminal.png)
 
 the command is:
@@ -103,6 +105,7 @@ Then you are ready to move the file to the remote server, by using the following
 if you compile and run the class again by using javac and java, you should see the information produced by the getProperty method of the remote server.
 
 This is what I got for compiling and running on the remote server's terminal:
+
 ![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/File.png)
 
 ---
@@ -147,6 +150,7 @@ Then you can try to log in the remote server again and type `mkdir .ssh` on the 
 Then back on the local device, try to type `scp /Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 
 After finishing all steps in this part, you should see that you do not need to enter the password again to log onto the remote server like this:
+
 ![Image](https://github.com/JasonDai1219/cse15l-lab-reports/blob/main/Key.png)
 ---
 ## Optimizing Remote Running
