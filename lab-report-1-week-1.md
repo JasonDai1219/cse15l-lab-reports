@@ -26,7 +26,7 @@ You will first need to type the following code in your Visual Studio Code's term
 
 the terminal look like this:
 
-![Image](blob/main/Terminal.png)
+![Image](Terminal.png)
 
 the command is:
 `ssh cs15lfa22pv@ieng6.ucsd.edu`
