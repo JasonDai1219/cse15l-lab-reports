@@ -176,6 +176,21 @@ and also `ssh cs15lfa22pv@ieng6.ucsd.edu "ls"` to log in and also list out all t
 
 It is also convienient to use the up arrow to retrieve your previous command.
 
+Here are demonstrations of running scp command on my computer:
+
+![Image](One%20line%20command.png)
+
+Here are demonstrations of running ssh and ls command on my computer:
+
+![Image](One%20line%20command%202.png)
+
+Here are demonstrations of running susing upper arrow command on terminal, that you can see it starts from empty, but after I press the upper arrow, it
+has the previous command I just did:
+
+![Image](no%20command.png)
+
+![Image](upper%20arrow.png)
+
 ---
 ## Conclusion
 By now, you should be able to use the remote access now, if you have any probelm or confusion in future usings, you are always welcome to come back to find information that may help you figure out the problem.
