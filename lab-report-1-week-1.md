@@ -111,6 +111,10 @@ Then you are ready to move the file to the remote server, by using the following
 
 `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/`
 
+Here is a screenshot of me running the scp command:
+
+![Image](scp command.png)
+
 if you compile and run the class again by using javac and java, you should see the information produced by the getProperty method of the remote server.
 
 This is what I got for compiling and running on the remote server's terminal:
