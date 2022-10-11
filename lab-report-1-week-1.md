@@ -113,7 +113,7 @@ Then you are ready to move the file to the remote server, by using the following
 
 Here is a screenshot of me running the scp command:
 
-![Image](scp command.png)
+![Image](scp%20command.png)
 
 if you compile and run the class again by using javac and java, you should see the information produced by the getProperty method of the remote server.
 
