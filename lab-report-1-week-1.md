@@ -86,7 +86,7 @@ Here is an example of using cp and cat command:
 ![Image](Commands.png)
 
 From the above Image, you can see that after we log into the remote server, we can run some commands like cp and cat, you can use cp to make a copy
-of your file and then use the cat command to print the contents of the file out.
+of your file to the another folder and then use the cat command to print the contents of the file out.
 
 
 ---
