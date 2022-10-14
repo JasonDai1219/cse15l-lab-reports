@@ -79,11 +79,11 @@ class SearchEngine {
 
 Here is the first example:
 
->First of all, this is the inducing inputs that caused the bug to reveal itself: {1,3,5}
+> First of all, this is the inducing input that caused the bug to reveal itself: {1,3,5}
 
 ![Image](Array%20Inputs.png)
 
->Then the terminal will display the symptom caused by the bug:
+> Then the terminal will display the symptom caused by the bug:
 
 ![Image](Array%20Symptom.png)
 
@@ -92,3 +92,14 @@ Here is the first example:
 > The bug is causing the Symptom because the order of the assigning process is in the wrong order. the code: arr[i] = newArray[arr.length-i-1] is assigning 0 to elements in arr array. So after we fix the order and return the array that has the complete, reversed contents, the bug would be resolved. 
 
 Here is the second example:
+> First of all, the failure inducing inputs are 1,2,3:
+
+![Image](Linked%20List%20Inputs.png)
+
+> Then the terminal will display the symptom caused by the bug:
+
+![Image](Linked%20List%20Symptom.png)
+
+> Finally, I fixed the bug by changiong the while loop to move the code: n.next = new Node(value, null) out of the while loop.
+
+> The bug is causing the symptom because if I put that inside the for loop, it will always set n.next to a node, which enables it to never break the condition of the while loop, so it will run into an infinite loop, causing the OutOfMemoryError.
