@@ -2,6 +2,8 @@
 ## Introduction
 Hello! in this week's lab report, you will learn how to use a simple implementation of search engine on web server to receive different presentation brought by your code. 
 ## Part 1
+*In this part, I will demonstrate using the simple searchEngine on path and Query to make it display different things.
+
 *Here is my Simplest Search Engine:*
 
 ```
@@ -71,3 +73,22 @@ class SearchEngine {
 ![Image](Query.png)
 
 > In this image, it is different with those two above, in this case the path of the URL contains "/search" instead of "/add", so this will trigger the first if statement under the first "else" statement. Then it will do things similarly with the previous two pictures, that it will first make a storing ArrayList called storing_list2. And then split the "Query" by "=", then the first element of the array created by the "splitting" is indeed "s", so it will keep going, and then the code checks that in the Arraylist store_list, which already included "Pineapple" and "apple", if these elements contains the goal we want, which is "app", the code will store them to the store_list2, which will make the store_list2 changes to a length of 2 Array, and then turn the array into a  String.
+
+## Part 2
+*In this part, I will show some debugging and fixing the bug examples.*
+
+Here is the first example:
+
+>First of all, this is the inducing inputs that caused the bug to reveal itself: {1,3,5}
+
+![Image](Array%20Inputs.png)
+
+>Then the terminal will display the symptom caused by the bug:
+
+![Image](Array%20Symptom.png)
+
+> Finally, I fixed the code by creating a new array that has the same size as the integer arr array and reversing the order of the body of the for loop, adding the indexes starting from the beginning of the arr integer array to the indexes starting from the ending of the newly created array and changes the output to be new Array.
+
+> The bug is causing the Symptom because the order of the assigning process is in the wrong order. the code: arr[i] = newArray[arr.length-i-1] is assigning 0 to elements in arr array. So after we fix the order and return the array that has the complete, reversed contents, the bug would be resolved. 
+
+Here is the second example:
