@@ -89,6 +89,17 @@ Here is the first example:
 
 > Finally, I fixed the code by creating a new array that has the same size as the integer arr array and reversing the order of the body of the for loop, adding the indexes starting from the beginning of the arr integer array to the indexes starting from the ending of the newly created array and changes the output to be new Array.
 
+Here is the fixed code:
+
+```
+ static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[arr.length - i - 1] = arr[i];
+    }
+    return newArray;
+  }
+```
 > The bug is causing the Symptom because the order of the assigning process is in the wrong order. the code: arr[i] = newArray[arr.length-i-1] is assigning 0 to elements in arr array. So after we fix the order and return the array that has the complete, reversed contents, the bug would be resolved. 
 
 Here is the second example:
@@ -101,6 +112,14 @@ Here is the second example:
 ![Image](Linked%20List%20Symptom.png)
 
 > Finally, I fixed the bug by changiong the while loop to move the code: n.next = new Node(value, null) out of the while loop.
+
+Here is the fixed code:
+```
+while(n.next != null) {
+    n = n.next;
+}
+n.next = new Node(value, null);
+```
 
 > The bug is causing the symptom because if I put that inside the for loop, it will always set n.next to a node, which enables it to never break the condition of the while loop, so it will run into an infinite loop, causing the OutOfMemoryError.
 
