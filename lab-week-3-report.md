@@ -60,6 +60,14 @@ class SearchEngine {
     }
 }
 ```
+
+After implementing this code, you can type the following command to the terminal to start the server:
+
+```
+javac Server.java SearchEngine.java
+java NumberServer ####(a random number that has no been widely used by other people)
+```
+
 *Here are screenshots for using the Simplest Search Engine to do adding and searching:*
 
 ![Image](Pineapple.png)
