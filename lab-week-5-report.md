@@ -263,4 +263,4 @@ But misinformation already is rampant. Sandra Meraz, Tulare
 Magically, the "-A n" option brings us many separated paragraphs that contains the following n lines of contents we are interested in. In this demonstration, I want to see what are some increases in the water fee document, such as the cost of delivering water's increase, or people's unstatisfactory to the increase of water fee, which is convinient to read, because each paragraph is clearly separated and the size of each paragraph is under our control.
 
 ## Conclusion
-*All in all, by walking through this lab-report, we can know that grep is an useful and interesting option, and adding options to the grep command, we can make it become even more interesting and useful.
+*All in all, by walking through this lab-report, we can know that grep is an useful and interesting option, and adding options to the grep command, we can make it become even more interesting and useful.*
