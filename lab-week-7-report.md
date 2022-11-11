@@ -69,3 +69,6 @@ As I timed myself doing these two approaches, the scp method took me 1 minute an
 (1) In my opinion, I think that I would like to use vim over the modify_scp method, because in the vim mode, we can easily jump around and use some command to help us go to the place we want to go, such as using the "$" to jump to the end of a line, and use the "/name" to search for all the occurence and use "n" to go to each occurence of the thing you are searching for. Therefore, I really like these commands, which makes the process of editing a file more efficient. So that is why I would prefer to use vim.
 
 (2) I think nothing would affect my decision, because I feel like vim is a mode that exist no matter you are in remote or local server, so this allows you to make changes to files whenever and anywhere you want, and you do not need to do those extra steps like copying it to remote or local servers after making the changes. Also, we can bring up two terminals to use vim in the same screen, so you do not need to worry that moving to different files requires you to exit and enter the vim mode multiple times. 
+
+## Conclusion
+After reading this lab report, you should be able to understand how the method I mentioned in part 1 works, and the benefits of using the vim method to modify files. Thank you for your time and patience.
