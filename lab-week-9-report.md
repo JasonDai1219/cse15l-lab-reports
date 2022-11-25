@@ -9,6 +9,7 @@ In the first part, let me show you the code and some examples of using the grade
 rm -rf student-submission
 git clone $1 student-submission
 
+
 cd student-submission
 if [ -e "ListExamples.java" ]
 then 
@@ -27,7 +28,9 @@ then
     echo "compiled successfully [+3 point]"
     ((score+=3))
 else
-    echo "compile error, please check the compile-error.txt file for detailed messages[+0 point]"
+    echo "compile error[+0 point]"
+    echo ""
+    cat compile-error.txt
     echo "Final Grade: [$score/10]"
     exit
 fi
@@ -38,8 +41,9 @@ then
     echo "tests passed [+5 point]"
     ((score += 5))
 else
-    echo "some tests did not pass, please check the test-error.txt file for detailed messages[+0 point]"
-    grep -h "Failures" test-error.txt
+    echo "some tests did not pass[+0 point]"
+    echo ""
+    cat test-error.txt
 fi
 echo "Final Grade: [$score/10]"
 ```
