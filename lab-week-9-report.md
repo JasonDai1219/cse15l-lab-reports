@@ -2,15 +2,14 @@
 ## Introduction
 Hello! Welcome to the last lab report of CSE 15L for this quarter. In this lab report, I will show my grade.sh and demonstrate how this grade.sh works with a submission sample.
 
-## Part 1
+## Part 1 - The Code and Examples
 In the first part, let me show you the code and some examples of using the grade.sh with different submissions.
 
 ```
 rm -rf student-submission
 git clone $1 student-submission
-
-
 cd student-submission
+
 if [ -e "ListExamples.java" ]
 then 
     echo "The file ListExamples.java exists [+2 point]"
@@ -48,12 +47,41 @@ fi
 echo "Final Grade: [$score/10]"
 ```
 *Some test error*
+
+https://github.com/ucsd-cse15l-f22/list-methods-lab3
+
 ![Image](Test-error.png)
 
 *All correct*
+
+https://github.com/ucsd-cse15l-f22/list-methods-corrected
 
 ![Image](Corrected.png)
 
 *Compile error*
 
+https://github.com/ucsd-cse15l-f22/list-methods-compile-error
+
 ![Image](Compile-error.png)
+
+## Part 2 - Trace
+In this part, let me show you how does the grade.sh produce its result.
+
+```
+rm -rf student-submission
+git clone $1 student-submission
+cd student-submission
+```
+In this part, since we are just creating and cloning the student-submission that we want to give a grade for, we are not doing any test or comparisons, so their stdout and stderr would have no thing, and these lines' return codes would all be 0, because there is no error in these lines.
+
+```
+if [ -e "ListExamples.java" ]
+then 
+    echo "The file ListExamples.java exists [+2 point]"
+    ((score+=2))
+else 
+    echo "The file ListExamples.java does not exist [+0 point]"
+    echo "Final Grade: [0/10]"
+    exit
+fi
+```
