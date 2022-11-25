@@ -65,7 +65,7 @@ https://github.com/ucsd-cse15l-f22/list-methods-compile-error
 ![Image](Compile-error.png)
 
 ## Part 2 - Trace
-In this part, let me show you how does the grade.sh produce its result.
+In this part, let me show you how does the grade.sh produce its result by using the "All correct" example.
 
 ```
 rm -rf student-submission
@@ -73,6 +73,7 @@ git clone $1 student-submission
 cd student-submission
 ```
 In this part, since we are just creating and cloning the student-submission that we want to give a grade for, we are not doing any test or comparisons, so their stdout and stderr would have no thing, and these lines' return codes would all be 0, because there is no error in these lines.
+
 
 ```
 if [ -e "ListExamples.java" ]
@@ -84,4 +85,6 @@ else
     echo "Final Grade: [0/10]"
     exit
 fi
+```
+In this part, we are trying to see whether the file, ListExamples.java" exist or not, if the student submission does not contain this file, or the file is saved in a wrong name, then these lines would be able to detect it and directly give the 0/10 score for this submission. However, in our example, the submission contains the wanted file name, so the stdout of our example would be "The file ListExamples.java exists [+2 point]"; the stderr would be empty, and the return codes would all be 0 because there is no error. The else part would not be activated because the file exists.
 ```
