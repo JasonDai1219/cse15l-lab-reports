@@ -47,3 +47,8 @@ else
 fi
 echo "Final Grade: [$score/10]"
 ```
+![Image](Test-error.png)
+
+![Image](Corrected.png)
+
+![Image](Compile-error.png)
