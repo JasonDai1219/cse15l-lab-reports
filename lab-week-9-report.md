@@ -47,7 +47,8 @@ fi
 echo "Final Grade: [$score/10]"
 ```
 
-*Examples*
+
+**Examples of running the grade.sh on various student submission examples**
 
 *1. Some test error*
 
