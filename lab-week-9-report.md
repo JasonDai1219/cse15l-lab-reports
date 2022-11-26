@@ -1,4 +1,4 @@
-# Lab Report 9
+# Lab Report 5
 ## Introduction
 Hello! Welcome to the last lab report of CSE 15L for this quarter. In this lab report, I will show my grade.sh and demonstrate how this grade.sh works with a submission sample.
 
