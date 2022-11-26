@@ -7,3 +7,5 @@
 [Lab Report 3](lab-week-5-report.md)
 
 [Lab Report 4](lab-week-7-report.md)
+
+[Lab Report 5](lab-week-9-report.md)
