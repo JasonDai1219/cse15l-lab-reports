@@ -68,7 +68,7 @@ https://github.com/ucsd-cse15l-f22/list-methods-compile-error
 
 ![Image](Compile-error.png)
 
-## Part 2 - Trace
+## Part 2 - Trace of the code
 In this part, let me show you how does the grade.sh produce its result by using the "All correct" example.
 
 ```
