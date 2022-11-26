@@ -46,19 +46,22 @@ else
 fi
 echo "Final Grade: [$score/10]"
 ```
-*Some test error*
+
+*Examples*
+
+*1. Some test error*
 
 https://github.com/ucsd-cse15l-f22/list-methods-lab3
 
 ![Image](Test-error.png)
 
-*All correct*
+*2. All correct*
 
 https://github.com/ucsd-cse15l-f22/list-methods-corrected
 
 ![Image](Corrected.png)
 
-*Compile error*
+*3. Compile error*
 
 https://github.com/ucsd-cse15l-f22/list-methods-compile-error
 
