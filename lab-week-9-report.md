@@ -90,7 +90,7 @@ else
     exit
 fi
 ```
-In this part, we are trying to see whether the file, ListExamples.java" exist or not, if the student submission does not contain this file, or the file is saved in a wrong name, then these lines would be able to detect it and directly give the 0/10 score for this submission. However, in our example, the submission contains the wanted file name, so the stdout of our example would be "The file ListExamples.java exists [+2 point]", and at the same time the score would be added by 2; the stderr would be empty, and the return codes would all be 0 because there is no error. The else part would not be activated because the file exists.
+In this part, we are trying to see whether the file, ListExamples.java" exist or not, if the student submission does not contain this file, or the file is saved in a wrong name, then these lines would be able to detect it and directly give the 0/10 score for this submission. However, in our example, the submission contains the wanted file name, so the if statement would be true, and the stdout of our example would be "The file ListExamples.java exists [+2 point]", and at the same time the score would be added by 2; the stderr would be empty, and the return codes would all be 0 because there is no error. The else part would not be activated because the file exists.
 
 
 ```
@@ -144,7 +144,7 @@ In this part, it is similar to the compile test we did above. We first look at w
 ```
 echo "Final Grade: [$score/10]"
 ```
-In this part, we are trying to give the final grade for the student's submission, and we can do that simply by echoing how many point the student has gained after going through the testing process. The stdout would be "Final Grade: [$score/10]", which the $score is the score that has been cumulated, the stderr would be empty, and the return code would be 0, since there is no error in this line. Sicne we have ran the if statement in our example, we will not run the else block.
+In this part, we are trying to give the final grade for the student's submission, and we can do that simply by echoing how many point the student has gained after going through the testing process. The if statement would be true, because there is no error detected in the student submission. The stdout would be "Final Grade: [$score/10]", which the $score is the score that has been cumulated, the stderr would be empty, and the return code would be 0, since there is no error in this line. Because we have ran the if statement in our example, we will not run the else block.
 
 ## Conclusion
 All in all, this is how my grade.sh give tests on the student submission, and output some feedback and the final score. Thanks for your time and patience for reviewing this lab report, have a great rest of your day. 
